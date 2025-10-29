@@ -6,3 +6,16 @@
   --font-merriweather: 'Merriweather', serif;
   --color-baby-blue: oklch(0.92 0.04 212);
 }
+
+@layer utilities {
+
+  .scroll-reveal {
+    opacity: 0;
+    transition: opacity 2s ease-out, transform 2s ease-out;
+  }
+
+  .scroll-reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
