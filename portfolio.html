@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mohamed Ahmed - Portfolio Website</title>
+    <link href ="output.css" rel="stylesheet">
+</head>
+
+
+<body class="bg-gray-50 font-merriweather">
+    <nav class="fixed w-full bg-white shadow-md z-50">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="flex justify-between items-center py-4">
+                <a href = "index.html"><img src="./assets/nameicon.svg" class="w-auto h-16 transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110"></a>
+                <div class="hidden md:flex space-x-8">
+                    <a href="index.html#home" class="text-gray-700 hover:text-blue-700 transition">Home</a>
+                    <a href="index.html#about" class="text-gray-700 hover:text-blue-700 transition">About</a>
+                    <a href="index.html#projects" class="text-gray-700 hover:text-blue-700 transition">Projects</a>
+                </div>
+            </div>
+            <div id="mobile-menu" class="hidden md:hidden pb-4">
+                <a href="index.html#home" class="block py-2 text-gray-700 hover:text-blue-700">Home</a>
+                <a href="index.html#about" class="block py-2 text-gray-700 hover:text-blue-700">About</a>
+                <a href="index.html#projects" class="block py-2 text-gray-700 hover:text-blue-700">Projects</a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="min-h-screen flex items-center justify-center pt-16 a bg-gradient-to-br from-baby-blue via-blue-100 to-purple-100">
+        <div class="max-w-6xl mx-auto text-center mt-20">
+            <h1 class="text-5xl md:text-7xl font-bold mb-6">
+                <span class="gradient-text">Portfolio Website</span>
+            </h1>
+            <a href = "https://github.com/moahm3d/moahm.site"><img src = "assets/portfolio.png" class = "border-4 border-solid w-auto h-auto transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110"></a>
+            <div class = "text-lg md:text-2xl text-gray-600 mt-8 bg-white rounded-4xl shadow-lg p-8 hover:shadow-xl">This project was created to showcase my web development skills and display other projects I made or contributed to. HTML, CSS and Javascript were the main languages when creating this website, with Tailwind CSS serving as the framework.</div>
+        </div>
+    </section>
+</body>
+</html>
