@@ -5,6 +5,31 @@
 @theme {
   --font-merriweather: 'Merriweather', serif;
   --color-baby-blue: oklch(0.92 0.04 212);
+
+  @keyframes fade-out {
+    to {
+      opacity: 0;
+      visibility: hidden;
+    }
+  }
+
+  @keyframes nav-slide {
+    from {
+      transform : translateY(-100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
+  @keyframes fade-in {
+    to {
+      opacity: 1;
+    }
+  }
+
 }
 
 @layer utilities {
@@ -17,5 +42,18 @@
   .scroll-reveal.active {
     opacity: 1;
     transform: translateY(0);
+  }
+
+  .initialScreen-fade-out {
+    animation: fade-out 1s 
+  }
+
+  .navbar-slide {
+    animation: nav-slide 0.8s ease-out forwards;
+  }
+
+  .initialScreen-fade-in {
+    animation: fade-in 1s ease-out 0.5s forwards;
+    opacity:0;
   }
 }
